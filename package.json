@@ -18,6 +18,7 @@
   "homepage": "https://github.com/scott6455/iron_kernel#readme",
   "dependencies": {
     "broccoli": "^0.16.8",
-    "broccoli-merge-trees": "^0.2.3"
+    "broccoli-merge-trees": "^0.2.3",
+    "broccoli-sass": "^0.6.6"
   }
 }
