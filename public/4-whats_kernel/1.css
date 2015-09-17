@@ -1,0 +1,168 @@
+@font-face {
+
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Bangers', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Sony Sketch EF Bold';
+  src: url('Sony_Sketch_Bold_205.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Sony Sketch EF Bold';
+  margin: 0;
+  background-image: linear-gradient(260deg, #505050 0%, #000000 100%);
+}
+
+a {
+  color:black;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background:rgba(0,0,0,0.2);
+  padding:20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+
+a:hover {
+  background:rgba(0,0,0,0.3);
+}
+
+.toggleNav {
+  display: none;
+}
+
+img {
+  width:100%;
+}
+
+.wrapper {
+  flex-direction: row;
+  /* max-width: 1000px;
+  margin: 0 auto;
+}
+input {
+  padding:10px;
+  border:0;
+}
+
+*/
+
+section {
+  text-align: center;
+  background:rgba(0,0,0,0.2);
+  padding:20px;
+  margin:20px 0;
+  color:white;
+  font-weight: 100;
+}
+footer {
+  text-align: center;
+  background:rgba(0,0,0,0.2);
+  padding:20px;
+  margin:20px 0;
+  color:white;
+  font-weight: 100;
+}
+
+/* Flex Container */
+.flex-nav ul {
+  border:1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+}
+
+/* Flex Item */
+.flex-nav li {
+  flex:3;
+}
+
+.flex-nav .social {
+  flex:1;
+}
+
+
+@media all and (max-width:1000px) {
+
+  .flex-nav ul {
+    flex-wrap:wrap;
+  }
+
+  .flex-nav li {
+    flex:1 1 50%;
+  }
+
+  .flex-nav .social {
+    flex:1 1 25%;
+  }
+
+}
+
+
+/* This is where the magic Happens */
+
+@media all and (max-width:500px) {
+
+  .flex-nav li {
+    flex-basis:100%;
+  }
+
+
+  /* Turn on flexbox */
+  .wrapper {
+    display:flex;
+    flex-direction: row;
+  }
+
+  /* Reorder items */
+  .wrapper > * {
+    order:999;
+  }
+
+  /* Nav */
+  .flex-nav {
+    order:1;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+    .flex-nav ul.open {
+      display:flex;
+    }
+
+  /* Header */
+  .top {
+    order:2;
+  }
+
+  /* Details */
+  .details {
+    order:3;
+  }
+
+  /* Sign Up */
+  .signup {
+    order:4;
+  }
+
+}

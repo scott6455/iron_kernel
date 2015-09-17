@@ -1,0 +1,19 @@
+
+div {
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+/* Chrome, Safari, Opera
+@-webkit-keyframes example {
+    from {background-image: url('1.jpg');}
+    to {background-image: url('1_base.jpg');}
+} */
+
+/* Standard syntax*/
+@keyframes example {
+    from {background-image:url('1.jpg');}
+    to {background-image:url('1_base.jpg');}
+}

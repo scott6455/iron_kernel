@@ -1,0 +1,16 @@
+{
+  "name": "kernel_project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/scott6455/kernel_project",
+  "authors": [
+    "scott6455 <scottgreen555@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

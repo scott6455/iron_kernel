@@ -1,9 +1,8 @@
 {
-  "name": "iron_kernel",
+  "name": "iron-kernel",
   "version": "0.0.0",
-  "homepage": "https://github.com/scott6455/iron_kernel",
   "authors": [
-    "scott6455 <scottgreen555@gmail.com>"
+    "Ryan Tablada <ryan.tablada@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
@@ -14,10 +13,10 @@
     "tests"
   ],
   "dependencies": {
-    "backbone": "~1.2.3",
-    "bourbon": "~4.2.4",
-    "jquery": "~2.1.4",
+    "backbone": "~1.2.1",
+    "handlebars": "~3.0.3",
+    "reset-css": "~2.0.2011012602",
     "neat": "~1.7.2",
-    "underscore": "~1.8.3"
+    "jquery": "~2.1.4"
   }
 }

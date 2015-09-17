@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Sony Sketch EF';
+  src: url('Sony_Sketch_Bold_205.ttf');
+}
+
+body {
+  background: #2a2e39;
+  color: #dbdbdb;
+  font-weight: 400;
+  font-size: 1em;
+  font: "Sony Sketch EF";
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.back {
+  position: fixed;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: #2a2e39;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* Global thumbnail navigation */
+.tendency{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 2em;
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
+  transition: transform 0.6s, opacity 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.tendency-hide {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -200px, 0);
+  transform: translate3d(0, -200px, 0);
+}
+
+.tendency_item {
+  position: relative;
+  display: block;
+  margin-right: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.tendency_item img {
+  display: block;
+  border-radius: 50%;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.tendency_item--current img,
+.tendency_item:hover img {
+  opacity: 0.95;
+  -webkit-transform: scale3d(0.75, 0.75, 1);
+  transform: scale3d(0.75, 0.75, 1);
+}
+
+.tendency_item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 65px;
+}
+.container--animInRight .back,
+.container--animInLeft .back,
+.container--animOutRight .back,
+.container--animOutLeft .back {
+  position: absolute;
+}
+
+.container--open .back {
+  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 250px, 0);
+  transform: translate3d(0, -100%, 0) translate3d(0, 250px, 0);
+}
+
+/* Fullscreenpic */
+.back_pic {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 120%;
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
+  transition: transform 0.6s, opacity 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.container--open .back_pic {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 20%, 0);
+  transform: translate3d(0, 20%, 0);
+}
+
+/* back content */
+.back_content {
+  position: absolute;
+  bottom: 0;
+  padding: 1.8em;
+  width: 100%;
+  font-size: 1.15em;
+}
+
+.back_title {
+  margin: 0 0 90px;
+  font-weight: 900;
+  font-size: 4em;
+  font-family: "Sony Sketch EF Bold";
+  line-height: 1;
+}
+
+.back__subtitle {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.back__description {
+  margin: 0 auto 0 1em;
+  line-height: 1.2;
+}

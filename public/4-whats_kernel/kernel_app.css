@@ -1,0 +1,156 @@
+@font-face {
+
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Bangers', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Sony Sketch EF Bold';
+  src: url('Sony_Sketch_Bold_205.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Sony Sketch EF Bold;
+  margin: 0;
+  background-image: linear-gradient(260deg, #505050 0%, #000000 100%);
+}
+
+a {
+  color:white;
+  border: 3px black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding:20px 5px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+
+a:hover {
+  ba
+}
+
+.one:hover {
+  background-image: url('open.png');
+  padding: 5px;
+  overflow: hidden;
+}
+
+.toggleNav {
+  display: none;
+}
+
+img {
+  width:100%;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+input {
+  padding:10px;
+  border:0;
+}
+
+
+section, footer {
+  text-align: center;
+  background:rgba(0,0,0,0.2);
+  padding:20px;
+  margin:20px 0;
+  color:white;
+  font-weight: 100;
+}
+
+.flex-nav ul {
+  border:5px #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Flex Item */
+.flex-nav li {
+  flex:3;
+  border:3px solid black;
+}
+
+.flex-nav .social {
+  flex:1;
+  border:3px solid black;
+}
+
+@media all and (max-width:750px) {
+  .flex-nav ul {
+  flex-wrap:wrap;
+}
+
+  .flex-nav li {
+  flex:1 1 50%;
+}
+
+.flex-nav .social {
+  flex:1 1 25%;
+}}
+@media all and (max-width:500px) {
+
+.flex-nav li {
+    flex-basis:100%;
+}
+
+  /* Turn on flexbox */
+.wrapper {
+  display:flex;
+  flex-direction:column;
+}
+
+  /* Reorder items */
+.wrapper > * {
+  order:999;
+}
+
+/* Nav */
+.flex-nav {
+  order:1;
+}
+
+.toggleNav {
+  display: block;
+  border: 12px grey;
+}
+
+.flex-nav ul {
+  display: none;
+}
+  .flex-nav ul {
+    display:flex;
+  }
+
+/* Header */
+.top {
+  order:2;
+}
+
+/* Details */
+.details {
+  order:3;
+}
+
+/* Sign Up */
+.signup {
+  order:4;
+}
+}
