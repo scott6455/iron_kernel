@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexBox Nav</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Oswald|Fjalla+One|Passion+One:400,700|Francois+One|Bangers|Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="kernel/1.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="top">
+      <h1><a href="#">FAQs | Troubleshooting</a></h1>
+    </header>
+    <nav class="flex-nav">
+      <a href="#" class="toggleNav">☰ Menu</a>
+      <ul>
+        <li><a class="one" href="#">"The Brains of It"</a></li>
+        <li><a class="two" href="#">Govenors -- I/O Schedulers -- Voltage and Misc Settings</a></li>
+
+        <li><a class="three" href="#">Android Operating Systems</a></li>
+        <li><a class="four" href="#">????</a></li>
+        <li><a class="five" href="#">?????</a></li>
+        <li class="social">
+          <a href="#.html"><i class="icon-android"></i></a>
+        </li>
+        <li class="social">
+          <a href="http://github/scott6455"><i class="fa fa-ban"></i></a>
+        </li>
+        <li class="social">
+          <a href="http://github"><i class="fa fa-github"></i></a>
+        </li>
+        <li class="social">
+          <a href="http://"><i class="fa fa-instagram"></i></a>!
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <img src="/public/images/android.jpg">
+    </section>
+
+    <section class="details">
+      <p>filler for the reason why</p>
+      <p>get in to kernel custum</p>
+    </section>
+
+    <section class="signup">
+      <form action="" class="signup">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value="%">
+      </form>
+    </section>
+
+    <footer>
+      <p>GALAXY S5 Kernel INFO<br>
+      Send your email and I will answer any questions after we validate the address is correct</p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('.toggleNav').on('click',function() {
+        $('.flex-nav ul').toggleClass('open');
+      });
+    });
+  </script>
+</body>
+</html>

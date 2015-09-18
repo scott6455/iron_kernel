@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Passion One', cursive;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Bangers', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Sony Sketch EF Bold';
+  src: url('Sony_Sketch_Bold_205.ttf');
+}
 
 body {
     margin-left: 200px;
